@@ -1,0 +1,62 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Masterpage.master.cs" Inherits="thicuoiky.Masterpage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server"> <style>
+                                         div{
+                                             display: flex; justify-content: center; 
+                                         }
+                                     </style>
+        <div>
+            <table border="1" style="width:100%;text-align:center">
+                <tr>
+                    <td>
+                        <asp:Image ID="Image1" Width="100" runat="server" ImageUrl="~/anh/logo.png" />
+                    </td>
+                    <td>
+                        TRƯỜNG CAO ĐẲNG CÔNG THƯƠNG VIỆT NAM 
+                      <br />
+                        <br />
+                        "Đào tạo những gì doanh nghiệp cần"
+                    </td>
+                   
+               
+                </tr>
+                <tr>
+                    <td>
+                        <asp:HyperLink ID="HyperLink1" runat="server"> Đăng kí thông tin</asp:HyperLink>
+                        <br
+                        <asp:HyperLink ID="HyperLink2" runat="server">Cập nhật trường học </asp:HyperLink>
+                    </td>
+                    <td>
+                        <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+                        </asp:ContentPlaceHolder>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <div>
+                            Họ và tên: Nguyễn Thị Ngọc Trâm&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            MSSV:2104CO270016<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Đề thi số: 1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Số báo danh: CCN6B19&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Lớp: CCN04.6B</div>
+                        <div>
+                        </div>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        &nbsp;</td>
+                </tr>
+            </table>
+        </div>
+    </form>
+    </body>
+    </html>
